@@ -1,0 +1,12 @@
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\BibliotecaVirtual.csproj.AssemblyReference.cache
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauifont.inputs
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.i.cs
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.g.cs
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlTypeInfo.g.cs
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
+D:\MAUI\BibliotecaVirtual\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\BibliotecaVirtual.GeneratedMSBuildEditorConfig.editorconfig
