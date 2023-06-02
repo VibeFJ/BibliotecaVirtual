@@ -30,6 +30,10 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -41,9 +45,12 @@
     <MauiImage Include="Resources\Images\*" />
     <!--<MauiImage Include="Resources\Images\*" TintColor="White" />-->
     <!--<MauiImage Include="Resources\Images\FontAwesome\brands\*"/>-->
-    <MauiImage Include="Resources\Images\FontAwesome\regular\*" />
+    <!--<MauiImage Include="Resources\Images\FontAwesome\regular\*" />-->
     <MauiImage Include="Resources\Images\FontAwesome\solid\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+    <MauiImage Update="Resources\Images\FontAwesome\solid\code.svg" TintColor="White" />
+    <MauiImage Update="Resources\Images\FontAwesome\solid\chart_line.svg" TintColor="White" />
+    <MauiImage Update="Resources\Images\FontAwesome\solid\floppy_disk.svg" TintColor="White" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -53,7 +60,29 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\FontAwesome\regular\file_code.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\chart_area.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\chart_bar.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\chart_column.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\chart_gantt.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\chart_line.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\chart_pie.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\chart_simple.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\code.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\code_branch.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\code_commit.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\code_compare.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\code_fork.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\code_merge.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\code_pull_request.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\file_code.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\floppy_disk.svg" />
+	  <None Remove="Resources\Images\FontAwesome\solid\laptop_code.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Bogus" Version="34.0.2" />
+		<PackageReference Include="LiveChartsCore" Version="2.0.0-beta.710" />
 		<PackageReference Include="LiveChartsCore.SkiaSharpView.Maui" Version="2.0.0-beta.710" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 		<PackageReference Include="PropertyChanged.Fody" Version="4.1.0" />

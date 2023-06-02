@@ -43,7 +43,7 @@
                                 </Grid.ColumnDefinitions>
 
                                 <ImageButton Grid.Column="0"
-                                             Source="dotnet_bot.svg"
+                                             Source="code"
                                              HeightRequest="45"
                                              WidthRequest="45"
                                              Margin="30,0,0,0">
@@ -58,7 +58,7 @@
                                 </Button>
                             </Grid>
                         </Frame>
-                        
+
                         <Frame Grid.Row="1"
                                BackgroundColor="{StaticResource colorAzulClaro}"
                                BorderColor="Transparent"
@@ -72,7 +72,7 @@
                                 </Grid.ColumnDefinitions>
 
                                 <ImageButton Grid.Column="0"
-                                             Source="dotnet_bot.svg"
+                                             Source="chart_line"
                                              HeightRequest="45"
                                              WidthRequest="45"
                                              Margin="30,0,0,0">
@@ -87,7 +87,6 @@
                                 </Button>
                             </Grid>
                         </Frame>
-                        
                     </Grid>
 
                     <Button Grid.Row="2"
