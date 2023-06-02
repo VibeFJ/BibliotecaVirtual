@@ -8,7 +8,7 @@
              x:Name="libros">
     
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="White">
             <CollectionView ItemsSource="{Binding LVM}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -22,6 +22,7 @@
 
                             <Label Grid.Row="0" 
                                        Text="{Binding Nombre}"
+                                       TextColor="Black"
                                        Margin="0,20,0,0"
                                        VerticalOptions="Center" 
                                        HorizontalOptions="Center"/>
@@ -35,11 +36,13 @@
 
                             <Label Grid.Row="2" 
                                        Text="{Binding Autor}"
+                                       TextColor="Black"
                                        VerticalOptions="Center" 
                                        HorizontalOptions="Center" />
 
                             <Label Grid.Row="3" 
                                        Text="{Binding Genero}"
+                                       TextColor="Black"
                                        VerticalOptions="Center" 
                                        HorizontalOptions="Center" />
                         </Grid>

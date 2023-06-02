@@ -82,6 +82,7 @@ namespace BibliotecaVirtual.MVVM.ViewModels
                 }
             };
 
+            ValorY = 0;
             contador++;
             ValorX++;
         }

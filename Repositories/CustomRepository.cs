@@ -37,7 +37,7 @@ namespace BibliotecaVirtual.Repositories
                     "Aventura"
                 };
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 1; i < 11; i++)
                 {
                     ObjAutor = new Autor()
                     {
@@ -63,20 +63,18 @@ namespace BibliotecaVirtual.Repositories
                 int indiceAutor = faker.Random.Int(0, objAutores.Count - 1);
                 int indiceGenero = faker.Random.Int(0, objGeneros.Count - 1);
 
-                for (int i = 0; i < 7; i++)
+                for (int i = 1; i < 8; i++)
                 {
                     ObjLibro = new Libro()
                     {
-                        Nombre = faker.Commerce.ProductName(),
+                        Nombre = "Libro " + i.ToString(),
                         AutorId = objAutores[indiceAutor].AutorId,
                         GeneroId = objGeneros[indiceGenero].GeneroId,
-                        Resumen = faker.Lorem.Paragraph()
+                        Resumen = "Descripción de el Libro " + i.ToString(),
                     };
 
                     conexion.Insert(ObjLibro);
                 }
-
-                var objLibro = conexion.Table<Libro>().ToList();
             }
         }
 
