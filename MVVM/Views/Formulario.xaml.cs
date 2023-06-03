@@ -7,6 +7,6 @@ public partial class Formulario : ContentPage
     public Formulario()
 	{
 		InitializeComponent();
-        BindingContext = new FormularioViewModel(Navigation);
+        BindingContext = new FormularioViewModel();
 	}
 }

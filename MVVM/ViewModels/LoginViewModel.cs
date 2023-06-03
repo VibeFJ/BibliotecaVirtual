@@ -58,9 +58,8 @@ namespace BibliotecaVirtual.MVVM.ViewModels
         public ICommand LoginCommand { get; private set; }
         public ICommand RegistroCommand { get; private set; }
 
-        public LoginViewModel(INavigation navigation)
+        public LoginViewModel()
         {
-            Navegacion = navigation;
             LoginCommand = new Command(Login);
             RegistroCommand = new Command(Formulario);
         }

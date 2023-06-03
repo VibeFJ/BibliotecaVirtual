@@ -15,6 +15,7 @@ namespace BibliotecaVirtual.MVVM.ViewModels
     [AddINotifyPropertyChangedInterface]
     public class PrincipalViewModel
     {
+        public INavigation navegation;
         private ContentView detallesView;
         public ContentView DetallesView
         {

@@ -12,6 +12,7 @@ namespace BibliotecaVirtual.MVVM.ViewModels
     [AddINotifyPropertyChangedInterface]
     public class FormularioViewModel
     {
+        public INavigation navegation;
         private Usuario ObjUsuario;
         private string confirmarcontraseña;
 
@@ -54,7 +55,7 @@ namespace BibliotecaVirtual.MVVM.ViewModels
 
         public ICommand AgregarUsuarioCommand { get; set; }
 
-        public FormularioViewModel(INavigation Navegacion)
+        public FormularioViewModel()
         {
             ObjUsuario = new Usuario();
             AgregarUsuarioCommand = new Command(AgregarUsuario);
