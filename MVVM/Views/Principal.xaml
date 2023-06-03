@@ -95,6 +95,8 @@
                     </Grid>
 
                     <Button Grid.Row="2"
+                            BackgroundColor="{StaticResource colorAzulClaro}"
+                            TextColor="White"
                             Text="Cerrar Sesión"
                             FontSize="16"
                             Margin="10">

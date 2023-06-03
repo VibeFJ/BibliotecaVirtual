@@ -11,10 +11,11 @@
             <VerticalStackLayout BackgroundColor="White"
                      Padding="20">
 
-                <Label Text="Bienvenido" 
-                   FontSize="24" 
-                   HorizontalOptions="Center" 
-                   Margin="0,10"/>
+                <Label Text="Bienvenido"
+                       TextColor="Black"
+                       FontSize="24" 
+                       HorizontalOptions="Center" 
+                       Margin="0,10"/>
 
                 <Image Source="dotnet_bot.svg"
                        HeightRequest="150"
@@ -23,10 +24,12 @@
 
                 <Entry Text="{Binding NombreUsuario}"
                    Placeholder="Usuario"
+                   TextColor="Black"
                    Margin="0,0,0,20" />
 
                 <Entry Text="{Binding Contraseña}"
                    Placeholder="Contraseña"
+                   TextColor="Black"
                    IsPassword="True"
                    Margin="0,0,0,20" />
 
@@ -37,14 +40,18 @@
                    Margin="0,10" />
 
                 <Button x:Name="btnLogin"
-                    Text="Iniciar sesión"
-                    Command="{Binding LoginCommand}"
-                    Margin="0,20"/>
+                        BackgroundColor="{StaticResource colorAzulClaro}"
+                        Text="Iniciar sesión"
+                        TextColor="White"
+                        Command="{Binding LoginCommand}"
+                        Margin="0,20"/>
 
                 <Button x:Name="btnRegistrarse"
-                    Text="Registrarse"
-                    Command="{Binding RegistroCommand}"
-                    Margin="0,20"/>
+                        BackgroundColor="{StaticResource colorAzulClaro}"
+                        Text="Registrarse"
+                        TextColor="White"
+                        Command="{Binding RegistroCommand}"
+                        Margin="0,20"/>
 
             </VerticalStackLayout>
         </ScrollView>
