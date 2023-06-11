@@ -60,11 +60,11 @@ namespace BibliotecaVirtual.Repositories
                 var objAutores = conexion.Table<Autor>().ToList();
                 var objGeneros = conexion.Table<Genero>().ToList();
 
-                int indiceAutor = faker.Random.Int(0, objAutores.Count - 1);
-                int indiceGenero = faker.Random.Int(0, objGeneros.Count - 1);
-
                 for (int i = 1; i < 8; i++)
                 {
+                    int indiceAutor = faker.Random.Int(0, objAutores.Count - 1);
+                    int indiceGenero = faker.Random.Int(0, objGeneros.Count - 1);
+
                     ObjLibro = new Libro()
                     {
                         Nombre = "Libro " + i.ToString(),

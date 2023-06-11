@@ -8,6 +8,6 @@ public partial class Login : ContentPage
 	public Login()
 	{
         InitializeComponent();
-        BindingContext = new LoginViewModel();
+        BindingContext = new LoginViewModel(Navigation);
     }
 }

@@ -87,6 +87,16 @@ namespace BibliotecaVirtual.MVVM.ViewModels
                     {
                         App.CustomerRepo.conexion.Insert(ObjUsuario);
                         Application.Current.MainPage.DisplayAlert("Bienvenido", $"{ObjUsuario.NombreUsuario} tu registro fue Exitoso", "Aceptar");
+
+                        var usuarios = App.CustomerRepo.conexion.Table<Usuario>().ToList();
+
+                        foreach (var usuario in usuarios)
+                        {
+                            Console.WriteLine($"ID: {usuario.UsuarioId}" + $" Nombre: {usuario.Nombre}" + $" Apellido Paterno: {usuario.ApellidoPaterno}");
+                            Console.WriteLine($"Apellido Materno: {usuario.ApellidoMaterno}" + $" Correo: {usuario.NombreUsuario}" + $" Contraseña: {usuario.Contraseña}");
+                            Console.WriteLine();
+                        }
+                        
                         Application.Current.MainPage = new Principal();
                     }
                 }
